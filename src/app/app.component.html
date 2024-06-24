@@ -7,105 +7,32 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-
-
-  main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-  }
-
-  .summary {
-    padding: .5rem
-  }
-
-  .education {
-    padding: .5rem;
-
-    .h5 {
-      margin: 0%;
-    }
-  }
-
-  .education-body {
-    margin-left: .5rem;
-  }
-
-  h3 {
-    margin-bottom: 0;
-  }
-
-  h4 {
-    margin-top: .5rem;
-    margin-bottom: 0;
-  }
-
-  .experience-body {
-    margin-left: .5rem;
-  }
-
-  ul{
-    margin-top: 0;
-  }
 </style>
 
 <main class="main">
   <div class="content">
-    <div class="header">
-      <h1>Stephen A Jackiw</h1>
-      Email: contactme&#64;stephenjackiw.com | LinkedIn: https://www.linkedin.com/in/jackiw-stephen/
-    </div>
-    <div class="summary">
-      <h3>SUMMARY</h3>
-      &nbsp;&nbsp;&nbsp;&nbsp;A Security+ certified software developer with 3+ years of experience creating and securing
-      web-applications. Seeking opportunities to use creative problem solving skills and out-of-the-box
-      thinking.
-    </div>
-    <div class="education">
-      <h3>EDUCATION</h3>
-      <div class="education-body">
-        <div style="display: flex; flex-direction: row;">
-          <div style="text-decoration: underline;">Purdue University</div>
-          <div> &nbsp;– BS, Cybersecurity – Graduated Honors – GPA 3.7</div>
-        </div>
-        <div style="display: flex; flex-direction: row;">
-          <div style="text-decoration: underline;">Certifications</div>
-          <div> &nbsp;– CompTIA Security+, AWS Cloud Practitioner, Acting: Communication Through Performance
-            AWS Developer Associate (Pending Test Date: June 16th, 2024)</div>
-        </div>
+    <div class="hero-section">
+      <div class="title">
+        Stephen Jackiw
       </div>
-
+      <div class="subtitle">
+        Full-Stack Developer
+      </div>
+      <div class="tagline">
+        <div>I design simple, yet engaging web applications with a modern-feel</div>
+      </div>
     </div>
-    <div class="experience">
-      <h3>PROFESSIONAL EXPERIENCE</h3>
+
+    <div style="height: 100vh;"></div>
+    <app-job-card></app-job-card>
+    <div class="experience-section">
+      <div class="experience-header">1. Experience</div>
       <div class="experience-body">
-        <div>
-          <h4>JP Morgan Chase</h4>
-          Software Engineer II | June 2023 – Present
-          <ul>
+        <div class="job">
+          <div class="job-company">JP Morgan Chase</div>
+          <div class="job-title">Software Engineer II</div> |
+          <div class="job-dateRange">June 2023 – Present</div>
+          <div class="job-tasks"><ul>
             <li>Developed software solutions using Java SpringBoot, AWS RDBS, AWS SQS and Kafka to
               automate sending letters to customers who have been denied a credit line increase</li>
             <li>Provided on-call support for production and testing issues for all applications in the credit and
@@ -113,9 +40,10 @@
             <li> Modernized application by moving our systems from proprietary architecture to the AWS
               ecosystem</li>
             <li>Maintained Unit and Integration tests using JUnit and Cucumber</li>
-          </ul>
+          </ul></div>
         </div>
         <div>
+
           <h4>Ford Motor Company</h4>
           Junior Software Engineer | May 2021 – August 2022
           <ul>
@@ -174,6 +102,13 @@
           <li>Gathered requirements from end-users to ensure customer satisfaction</li>
           <li>Updated legacy code</li>
         </ul>
+      </div>
+      <div>
+      </div>
+      <div class="experience">
+        <h3>PROFESSIONAL EXPERIENCE</h3>
+
+
       </div>
     </div>
     <div class="skillsAndTech">

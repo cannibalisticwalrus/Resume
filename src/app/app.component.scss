@@ -1,0 +1,101 @@
+$darkModeBackground: #22212e;
+$darkModeText: #e0dcd3;
+
+main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+    background-color: $darkModeBackground;
+    color: $darkModeText;
+    margin: 0;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position:fixed;
+    z-index: 0;
+    
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: #ff4d4d;
+}
+
+.tagline {
+    font-size: 1.5rem;
+
+}
+
+.experience-section{
+    z-index: 1;
+    background-color: $darkModeBackground;
+    font-size: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.summary {
+    padding: .5rem
+}
+
+.education {
+    background-color: $darkModeBackground;
+    z-index: 5;
+    padding: .5rem;
+
+    .h5 {
+        margin: 0%;
+    }
+}
+
+.education-body {
+    margin-left: .5rem;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.experience-body {
+    margin-left: .5rem;
+}
+
+ul {
+    margin-top: 0;
+}
