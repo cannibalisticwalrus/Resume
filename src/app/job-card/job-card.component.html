@@ -1,1 +1,8 @@
-<p>job-card works! {{jobs}}</p>
+<div class="job">
+    <div class="job-company">{{jobs[0].company}}</div>
+    <div class="job-title">{{jobs[0].title}}</div> |
+    <div class="job-dateRange">{{jobs[0].startDate}} – {{jobs[0].endDate}}</div>
+    <div class="job-tasks"><ul>
+        <li *ngFor="let task of jobs[0].listOfTasks; index as i;">{{task}}</li>
+    </ul></div>
+  </div>

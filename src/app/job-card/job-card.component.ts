@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Job } from '../model/job';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-job-card',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './job-card.component.html',
   styleUrl: './job-card.component.scss'
 })
@@ -15,7 +16,11 @@ export class JobCardComponent {
       company: "JP Morgan Chase",
       startDate: "June 2023",
       endDate: "Present",
-      listOfTasks: ["A", "B", "C"]
+      listOfTasks: [
+        "Developed software solutions using Java SpringBoot, AWS RDBS, AWS SQS and Kafka to automate sending letters to customers who have been denied a credit line increase",
+        "Provided on-call support for production and testing issues for all applications in the credit and consumer business space",
+        "Modernized application by moving our systems from proprietary architecture to the AWS ecosystem",
+        "Maintained Unit and Integration tests using JUnit and Cucumber"]
     },
     {
       title: "Cybersecurity Engineer",
@@ -26,7 +31,8 @@ export class JobCardComponent {
     }
   ];
 
-  constructor() {
 
+  constructor() {
+    console.log(this.jobs[0]);
   }
 }
