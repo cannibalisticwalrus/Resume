@@ -58,7 +58,14 @@ main {
 }
 
 .experience-header{
-    background-color: $darkModeRedAccent;
+    border-width: 0;
+    border-top: 4px;
+    border-bottom: 4px;
+    border-color: $darkModeRedAccent;
+    border-style: solid;
+
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 
